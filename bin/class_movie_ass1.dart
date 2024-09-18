@@ -10,12 +10,15 @@ class Movie {
   Movie.getRating(this.title, this.studio) {
     rating = "PG";
   }
-
-  // Override toString method to print Movie objects
-  @override
+@override
   String toString() {
-    return 'Movie{title: $title, studio: $studio, rating: $rating}';
+    return 'title :$title , studio:$studio , rating :$rating';
   }
+  // // Override toString method to print Movie objects
+  // @override
+  // String toString() {
+  //   return 'Movie{title: $title, studio: $studio, rating: $rating}';
+  // }
 
   // getPG: Write this method that takes an array of base type Movie as its argument and returns a new array of only those movies in the input array that their rating contains “PG”
   static List<Movie> getPG(List<Movie> allMovies) {
@@ -25,6 +28,7 @@ class Movie {
     }
     return allMoviesSameRating;
   }
+
 }
 
 void main() {
